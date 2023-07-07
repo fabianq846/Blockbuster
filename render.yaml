@@ -1,0 +1,39 @@
+# render.yaml
+
+# Configuración general
+site_name: Mi Sitio
+theme: default
+
+# Configuración de las páginas
+pages:
+  - name: Inicio
+    path: index.html
+    template: home.html
+    data:
+      title: Bienvenido a Mi Sitio
+      description: Este es el sitio de ejemplo.
+
+  - name: Acerca de
+    path: about.html
+    template: about.html
+    data:
+      title: Acerca de Nosotros
+      description: Conoce más sobre nosotros.
+
+  - name: Contacto
+    path: contact.html
+    template: contact.html
+    data:
+      title: Contáctanos
+      description: Ponte en contacto con nosotros.
+
+# Configuración de las plantillas
+templates:
+  - name: home.html
+    path: templates/home.html.erb
+
+  - name: about.html
+    path: templates/about.html.erb
+
+  - name: contact.html
+    path: templates/contact.html.erb
